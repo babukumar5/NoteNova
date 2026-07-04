@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { NotesProvider } from './context/NotesContext';
@@ -12,6 +13,19 @@ import NotFound from './pages/NotFound';
  * Decouples the public Home landing page from the MainLayout workspace shell.
  */
 function App() {
+  useEffect(() => {
+    // Detect if this is the first page loaded in this browser tab session
+    const isDirectEntry = !sessionStorage.getItem('has_navigated');
+    sessionStorage.setItem('has_navigated', 'true');
+
+    if (isDirectEntry && window.location.pathname !== '/') {
+      const currentPath = window.location.pathname;
+      // Prepend Home '/' to history so Back goes to '/'
+      window.history.replaceState(null, '', '/');
+      window.history.pushState(null, '', currentPath);
+    }
+  }, []);
+
   return (
     <ThemeProvider>
       <NotesProvider>
