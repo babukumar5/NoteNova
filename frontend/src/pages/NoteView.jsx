@@ -15,7 +15,8 @@ import {
   AlertCircle,
   Eye,
   WifiOff,
-  Clock
+  Clock,
+  ArrowLeft
 } from 'lucide-react';
 
 /**
@@ -246,6 +247,17 @@ export default function NoteView() {
     return `${mins} min read`;
   };
 
+  // History-aware Back Navigation
+  const handleBack = () => {
+    // If there is in-app router history in this tab session, pop backwards
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      // Otherwise, fallback to Home to avoid leaving the app/closing the tab
+      navigate('/');
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex-1 flex flex-col items-center justify-center p-10 text-text-secondary">
@@ -277,15 +289,26 @@ export default function NoteView() {
       {/* Dynamic Header actions */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 shrink-0">
         
-        {/* Editable Title */}
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="Untitled note"
-          className="flex-1 bg-transparent border-none text-2xl font-display font-extrabold focus:outline-none text-text-primary placeholder-border"
-          id="editor-title-input"
-        />
+        {/* Title & Back Button */}
+        <div className="flex items-center gap-3 flex-1 min-w-0">
+          <button
+            onClick={handleBack}
+            className="p-2 rounded-xl border border-border hover:bg-hover text-text-secondary hover:text-text-primary transition-all duration-200 cursor-pointer shrink-0"
+            title="Back"
+            id="editor-back-button"
+          >
+            <ArrowLeft className="h-4 w-4" />
+          </button>
+          
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Untitled note"
+            className="flex-1 bg-transparent border-none text-2xl font-display font-extrabold focus:outline-none text-text-primary placeholder-border overflow-hidden text-ellipsis whitespace-nowrap"
+            id="editor-title-input"
+          />
+        </div>
 
         {/* Header Action controls */}
         <div className="flex items-center gap-1.5 select-none">
