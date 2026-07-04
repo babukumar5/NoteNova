@@ -25,7 +25,7 @@ import {
 } from 'lucide-react';
 
 /**
- * Premium Standalone About Page for NoteNest.
+ * Premium Standalone About Page for NoteNova.
  */
 export default function About() {
   const { theme, toggleTheme } = useTheme();
@@ -42,7 +42,7 @@ export default function About() {
           <div className="h-6 w-6 rounded-md bg-brand-primary flex items-center justify-center">
             <span className="text-bg-primary font-display font-black text-xs">N</span>
           </div>
-          <span className="font-display font-bold text-sm tracking-tight">NOTE NEST</span>
+          <span className="font-display font-bold text-sm tracking-tight">NOTE NOVA</span>
         </Link>
 
         {/* Center: Navigation Links */}
@@ -67,14 +67,14 @@ export default function About() {
           </button>
           
           <button 
-            onClick={() => alert("Log In coming in NoteNest V2")}
+            onClick={() => alert("Log In coming in NoteNova V2")}
             className="text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
           >
             Log In
           </button>
           
           <button 
-            onClick={() => alert("Sign Up coming in NoteNest V2")}
+            onClick={() => alert("Sign Up coming in NoteNova V2")}
             className="bg-brand-primary text-bg-primary px-4 py-2 rounded-full hover:bg-brand-hover transition-all hover:scale-[1.02] cursor-pointer"
           >
             Sign Up
@@ -93,11 +93,11 @@ export default function About() {
           </div>
           
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl tracking-tight leading-tight mb-6 text-text-primary">
-            About NoteNest
+            About NoteNova
           </h1>
           
           <p className="font-sans text-text-secondary text-sm sm:text-base leading-relaxed">
-            NoteNest is a modern URL-first online note-taking platform where every unique URL becomes an instant workspace. Create notes, edit them, organize your ideas, and share them effortlessly. No unnecessary setup—just open a URL and start writing.
+            NoteNova is a modern URL-first online note-taking platform where every unique URL becomes an instant workspace. Create notes, edit them, organize your ideas, and share them effortlessly. No unnecessary setup—just open a URL and start writing.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export default function About() {
             </div>
             <div className="md:col-span-2 select-text">
               <p className="font-sans text-xs sm:text-sm text-text-secondary leading-relaxed mb-4">
-                At NoteNest, we believe note-taking should be simple, fast, and distraction-free.
+                At NoteNova, we believe note-taking should be simple, fast, and distraction-free.
               </p>
               <p className="font-sans text-xs sm:text-sm text-text-secondary leading-relaxed mb-4">
                 Instead of forcing users through lengthy sign-up processes, we let them focus on what matters most—capturing ideas instantly.
@@ -299,7 +299,7 @@ export default function About() {
                 Information Technology Student
               </p>
               <p className="font-sans text-xs text-text-secondary max-w-sm leading-relaxed mb-6">
-                NoteNest is designed and developed by BABU KUMAR, an Information Technology student passionate about building modern web applications using the MERN stack. The goal of NoteNest is to create a simple, fast, and beautiful writing experience that anyone can use instantly.
+                NoteNova is designed and developed by BABU KUMAR, an Information Technology student passionate about building modern web applications using the MERN stack. The goal of NoteNova is to create a simple, fast, and beautiful writing experience that anyone can use instantly.
               </p>
 
               {/* Action Buttons */}
@@ -398,7 +398,7 @@ export default function About() {
               Frequently Asked Questions
             </h2>
             <p className="font-sans text-xs text-text-secondary">
-              Find instant answers to common questions about NoteNest.
+              Find instant answers to common questions about NoteNova.
             </p>
           </div>
 
@@ -407,7 +407,7 @@ export default function About() {
             <div className="p-5 rounded-2xl border border-border bg-bg-primary shadow-3xs">
               <h3 className="font-display font-bold text-xs text-text-primary mb-1.5 flex items-center gap-1.5">
                 <HelpCircle className="h-3.5 w-3.5 text-text-muted" />
-                <span>Is NoteNest free?</span>
+                <span>Is NoteNova free?</span>
               </h3>
               <p className="font-sans text-[11px] text-text-secondary leading-relaxed">
                 Yes. Public notes are completely free.
@@ -437,7 +437,7 @@ export default function About() {
             <div className="p-5 rounded-2xl border border-border bg-bg-primary shadow-3xs">
               <h3 className="font-display font-bold text-xs text-text-primary mb-1.5 flex items-center gap-1.5">
                 <HelpCircle className="h-3.5 w-3.5 text-text-muted" />
-                <span>Does NoteNest save automatically?</span>
+                <span>Does NoteNova save automatically?</span>
               </h3>
               <p className="font-sans text-[11px] text-text-secondary leading-relaxed">
                 Yes. Every change is automatically saved while you type.
@@ -478,7 +478,7 @@ export default function About() {
               <div className="h-6 w-6 rounded-md bg-brand-primary flex items-center justify-center">
                 <span className="text-bg-primary font-display font-black text-xs">N</span>
               </div>
-              <span className="font-display font-bold text-sm tracking-tight text-text-primary">NoteNest</span>
+              <span className="font-display font-bold text-sm tracking-tight text-text-primary">NoteNova</span>
             </div>
             <p className="text-[11px] text-text-secondary max-w-xs leading-relaxed">
               A modern URL-first note-taking platform built for speed, simplicity, and productivity.
@@ -503,7 +503,7 @@ export default function About() {
         </div>
 
         <div className="max-w-4xl mx-auto px-6 border-t border-border/40 pt-6 flex items-center justify-between text-[10px]">
-          <span>© 2026 NoteNest. All Rights Reserved.</span>
+          <span>© 2026 NoteNova. All Rights Reserved.</span>
           <span>Designed with Apple aesthetics.</span>
         </div>
       </footer>

@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 
 /**
- * Premium Apple-Style Standalone SaaS Landing Page for NoteNest.
+ * Premium Apple-Style Standalone SaaS Landing Page for NoteNova.
  */
 export default function Home() {
   const navigate = useNavigate();
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="h-6 w-6 rounded-md bg-brand-primary flex items-center justify-center">
             <span className="text-bg-primary font-display font-black text-xs">N</span>
           </div>
-          <span className="font-display font-bold text-sm tracking-tight">NOTE NEST</span>
+          <span className="font-display font-bold text-sm tracking-tight">NOTE NOVA</span>
         </div>
 
         {/* Center: Navigation Links */}
@@ -90,14 +90,14 @@ export default function Home() {
           </button>
           
           <button 
-            onClick={() => alert("Log In system coming in NoteNest V2")}
+            onClick={() => alert("Log In system coming in NoteNova V2")}
             className="text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
           >
             Log In
           </button>
           
           <button 
-            onClick={() => alert("Sign Up system coming in NoteNest V2")}
+            onClick={() => alert("Sign Up system coming in NoteNova V2")}
             className="bg-brand-primary text-bg-primary px-4 py-2 rounded-full hover:bg-brand-hover transition-all hover:scale-[1.02] cursor-pointer"
           >
             Sign Up
@@ -128,7 +128,7 @@ export default function Home() {
         >
           <div className="relative flex items-center p-1.5 rounded-2xl border border-border bg-bg-primary shadow-[0_8px_30px_rgba(0,0,0,0.015)] focus-within:border-text-primary transition-all duration-250">
             <span className="pl-4 text-xs font-semibold text-text-muted font-sans shrink-0">
-              notenest.com/
+              notenova.com/
             </span>
             <input
               type="text"
@@ -160,11 +160,11 @@ export default function Home() {
           Designed for developers, students, creators, writers and teams.
         </span>
 
-        {/* 2. How NoteNest Works */}
+        {/* 2. How NoteNova Works */}
         <div className="w-full border-t border-border pt-16 mb-20" id="works">
           <div className="text-center max-w-xl mx-auto mb-12">
             <h2 className="font-display font-extrabold text-2xl md:text-3xl tracking-tight text-text-primary mb-3">
-              How NoteNest Works
+              How NoteNova Works
             </h2>
             <p className="font-sans text-xs sm:text-sm text-text-secondary leading-relaxed">
               Create a note in seconds. No signup. No setup. No friction.
@@ -325,7 +325,7 @@ export default function Home() {
               Perfect For
             </h2>
             <p className="font-sans text-xs sm:text-sm text-text-secondary leading-relaxed">
-              NoteNest is optimized for diverse documentation workflows.
+              NoteNova is optimized for diverse documentation workflows.
             </p>
           </div>
 
@@ -397,10 +397,10 @@ export default function Home() {
               <div className="h-6 w-6 rounded-md bg-brand-primary flex items-center justify-center">
                 <span className="text-bg-primary font-display font-black text-xs">N</span>
               </div>
-              <span className="font-display font-bold text-sm tracking-tight text-text-primary">NoteNest</span>
+              <span className="font-display font-bold text-sm tracking-tight text-text-primary">NoteNova</span>
             </div>
             <p className="text-[11px] text-text-secondary max-w-xs leading-relaxed">
-              The simplest URL-first note platform. Built for students, developers, creators, writers and teams.
+              NoteNova — A modern URL-first note-taking platform.
             </p>
           </div>
 
@@ -422,7 +422,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-4xl mx-auto px-6 border-t border-border/40 pt-6 flex items-center justify-between text-[10px]">
-          <span>© 2026 NoteNest. All rights reserved.</span>
+          <span>© 2026 NoteNova. All Rights Reserved.</span>
           <span>Designed with Apple aesthetics.</span>
         </div>
       </footer>

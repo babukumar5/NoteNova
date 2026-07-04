@@ -104,7 +104,7 @@ export default function MainLayout() {
               <span className="text-bg-primary font-display font-black text-xs">N</span>
             </div>
             <span className="font-display font-bold text-sm tracking-tight hidden sm:inline-block">
-              NoteNest
+              NoteNova
             </span>
           </Link>
         </div>

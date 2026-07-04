@@ -28,7 +28,7 @@ app.use('/api/v1/notes', noteRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  res.status(200).json({ success: true, message: 'noteNest backend server is online.' });
+  res.status(200).json({ success: true, message: 'NoteNova backend server is online.' });
 });
 
 // Central Error Handler Middleware (Must be last)
@@ -36,5 +36,5 @@ app.use(errorHandler);
 
 // Launch Express Server
 app.listen(PORT, () => {
-  console.log(`noteNest backend server running on port ${PORT} in [${process.env.NODE_ENV || 'development'}] mode`);
+  console.log(`NoteNova backend server running on port ${PORT} in [${process.env.NODE_ENV || 'development'}] mode`);
 });

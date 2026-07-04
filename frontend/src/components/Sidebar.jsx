@@ -75,7 +75,7 @@ export default function Sidebar({ isOpen, onClose }) {
         
         {/* Mobile Header (Close drawer button) */}
         <div className="flex items-center justify-between mb-4 md:hidden">
-          <span className="font-display font-bold text-sm tracking-tight">NoteNest Menu</span>
+          <span className="font-display font-bold text-sm tracking-tight">NoteNova Menu</span>
           <button 
             onClick={onClose}
             className="p-1.5 rounded-lg text-text-secondary hover:text-text-primary hover:bg-hover cursor-pointer"
