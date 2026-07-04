@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { 
@@ -30,6 +30,18 @@ export default function Home() {
   // URL Input Form States
   const [slug, setSlug] = useState('');
   const [error, setError] = useState('');
+
+  // Handle hash scrolling to about footer
+  useEffect(() => {
+    if (window.location.hash === '#about') {
+      const element = document.getElementById('about');
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 150);
+      }
+    }
+  }, []);
 
   const RESERVED = new Set(['api', 'search', 'recent', 'static', 'admin', 'assets', 'favicon', 'robots.txt', 'sitemap.xml', 'index', 'home']);
 
@@ -389,7 +401,7 @@ export default function Home() {
     </section>
 
       {/* 6. Footer */}
-      <footer className="border-t border-border bg-bg-primary py-12 text-left text-xs text-text-muted font-sans select-none shrink-0">
+      <footer id="about" className="border-t border-border bg-bg-primary py-12 text-left text-xs text-text-muted font-sans select-none shrink-0">
         <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           
           <div>
